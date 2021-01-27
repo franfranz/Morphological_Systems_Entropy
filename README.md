@@ -5,7 +5,7 @@ Code and data for the study "Entropy of morphological systems is modulated by fu
 * Preprint
 ### Code
 * [00 - Merge text resources](https://github.com/franfranz/Morphological_Systems_Entropy/blob/main/00_EMS_Merge_text_resources_v1_0_0.R)
-* Code 2
+* 01 - Compare noun distributions
 ### Data 
 * Dataset 1
 * Dataset 2
