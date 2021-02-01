@@ -3,7 +3,7 @@ Code and data for the study "Entropy of morphological systems is modulated by fu
 
 ## Contents
 
-### Light version
+### Compact version
 This version includes the final dataset used in the study and the code for analysis. 
 #### Code 
 * Analysis 1
@@ -22,5 +22,8 @@ This version includes the code to preprocess the data and obtain the dataset ana
 * [00 - Merge text resources](https://github.com/franfranz/Morphological_Systems_Entropy/blob/main/00_EMS_Merge_text_resources_v1_0_0.R)
 * 01 - Compare noun distributions
 #### Data 
-* Dataset 1
-* Dataset 2
+* All nouns from Itwac - url
+* Morph-it list - url
+* Text windows containing the words in the animate sample
+* Text windows containing the words in the control sample
+* csvs with sum
