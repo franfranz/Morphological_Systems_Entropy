@@ -40,8 +40,8 @@
 #   
 #
 ###
-# required packages: readr, pryr, stringr,treemap, tidyverse, multcomp(x Tukey hsd)
-# for context entropy: tools
+
+# required packages: pryr, stringr, treemap
 library(pryr)
 
 ## input required: graphical parameters 
@@ -59,7 +59,7 @@ legendcontent=c("Fem. Plur.","Fem. Sing.","Masc. Plur.", "Masc. Sing.")
 ## input directories 
 
 # this is the folder where this code is stored:
-wd_code="C:\\Users\\FF\\Documents\\Analisi varie\\Inflectional Entropy ITA\\Animacy and Morphology 0_0_1"
+wd_code="PATH"
 setwd(wd_code)
 
 # this is the subdirectory of wd_code where the corpora are stored
