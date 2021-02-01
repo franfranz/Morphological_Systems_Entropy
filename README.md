@@ -19,10 +19,10 @@ This version includes the final dataset used in the study and the code for analy
 This version includes the code to preprocess the data and obtain the dataset analyzed in the study. 
 
 #### Code
-* [00 - Merge text resources](https://github.com/franfranz/Morphological_Systems_Entropy/blob/main/00_EMS_Merge_text_resources_v1_0_0.R)
+* [00 - Merge text resources](https://github.com/franfranz/Morphological_Systems_Entropy/blob/main/Full/00_EMS_Merge_text_resources_v2_0_0.R)
 * 01 - Compare noun distributions
 #### Data 
-* All nouns from Itwac - url
+* All nouns from Itwac - url [wd0](https://github.com/franfranz/Morphological_Systems_Entropy/tree/main/Full/wd0)
 * Morph-it list - url
 * Text windows containing the words in the animate sample
 * Text windows containing the words in the control sample
