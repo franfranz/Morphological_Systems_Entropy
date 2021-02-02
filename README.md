@@ -7,7 +7,7 @@ Code and data for the study "Entropy of morphological systems is modulated by fu
 This version includes the final dataset used in the study and the code for analysis. 
 #### Code 
 * Analysis 1
-* GC - Index and collection of graphs of Compact version
+* Graph_Comp EMS - Index and collection of graphs of Compact version
 
 #### Data 
 * All nouns
@@ -19,10 +19,10 @@ This version includes the final dataset used in the study and the code for analy
 This version includes the code to preprocess the data and obtain the dataset analyzed in the study. 
 
 #### Code
-* [00 - Merge text resources](https://github.com/franfranz/Morphological_Systems_Entropy/blob/main/Full/00_EMS_Merge_text_resources_v2_0_0.R)
-* 01 - Compare noun distributions
-* 02 - Compute Context Entropy 
-* GF - Index and collection of graphs of Full version
+* [00 EMS - Merge text resources](https://github.com/franfranz/Morphological_Systems_Entropy/blob/main/Full/00_EMS_Merge_text_resources_v2_0_0.R)
+* 01 EMS - Compare noun distributions
+* 02 EMS - Compute Context Entropy 
+* Graph_Full EMS - Index and collection of graphs of Full version
 
 #### Data 
 * Language Resources used in the study (from Itwac and Morph-it!) [wd0](https://github.com/franfranz/Morphological_Systems_Entropy/tree/main/Full/wd0)
