@@ -10,7 +10,7 @@ This version includes the final dataset used in the study and the code for analy
 * Graph_Comp EMS - Index and collection of graphs of Compact version
 
 #### Data 
-* All nouns
+* All nouns [wd_in](https://github.com/franfranz/Morphological_Systems_Entropy/tree/main/Compact/wd_in)
 * Animate sample
 * Control sample
 
