@@ -194,7 +194,6 @@ alln_fp$POS=as.factor(as.character(alln_fp$POS))
 # object with all Fs
 alln_fs= datallnouns[datallnouns$POS=="NOUN-F:s", ]
 summary(alln_fs)
-str(alln_fs$FREQ)
 alln_fs$POS=as.factor(as.character(alln_fs$POS))
 
 # object with all Mp
