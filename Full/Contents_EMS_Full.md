@@ -1,5 +1,5 @@
 ## Morphological Systems Entropy: Nominal Inflection - Full version
-This version includes the code for analysis and the code to preprocess the data and obtain the dataset analyzed in the study. 
+This version includes the code for analysis and the code to preprocess the data and obtain the dataset analyzed in the study (link to preprint). 
 
 #### Code
 * [00 EMS Full - Merge Text Resources](https://github.com/franfranz/Morphological_Systems_Entropy/blob/main/Full/00_EMS_Full_Merge_text_resources_v1_0_0.R)
