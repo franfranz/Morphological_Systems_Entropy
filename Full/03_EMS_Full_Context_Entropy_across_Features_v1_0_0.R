@@ -113,13 +113,10 @@ wd_3=paste0(wd_code, "\\wd3")
 setwd(wd_3)
 
 # Import control nouns
-#dat_cont= read.csv("Control_sample_H_ITA.csv", T)
 dat_cont= read.csv("Control_sample_H_ITA.csv", T)
 
 # Import animate nouns
-#dat_anim= read.csv("Animate_sample_H_ITA.csv", T)
 dat_anim= read.csv("Animate_sample_H_ITA.csv", T)
-dat_anim$logtoken=log(dat_anim$FREQ)
 
 #
 #   Split across INFLECTIONAL FEATURES - Control nouns
