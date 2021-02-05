@@ -1,4 +1,4 @@
-##Full version
+## Morphological Systems Entropy: Nominal Inflection - Full version
 This version includes the code for analysis and the code to preprocess the data and obtain the dataset analyzed in the study. 
 
 #### Code
