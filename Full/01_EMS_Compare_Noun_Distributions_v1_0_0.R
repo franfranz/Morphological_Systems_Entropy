@@ -50,6 +50,8 @@ pal_01=c(col_fp, col_fs, col_mp, col_ms)
 col_ref= "#008B45" # "springgreen4"
 col_borders= "#FFFFFF" # "white"
 
+myfavlinescol1="#4A4A4A" #"grey29"
+
 # some common features of graphics
 myfavcex=1.3
 myfavpch=19
