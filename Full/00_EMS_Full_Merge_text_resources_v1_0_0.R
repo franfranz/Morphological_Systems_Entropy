@@ -70,7 +70,7 @@ roundnum=3
 ## input directories 
 
 # this is the folder where this code is stored:
-wd_code="C:\\Users\\FF\\Documents\\Analisi varie\\Inflectional Entropy ITA\\Animacy and Morphology 0_0_1"
+wd_code="PATH"
 
 setwd(wd_code)
 
