@@ -26,7 +26,7 @@ This version includes the code to preprocess the data and obtain the dataset ana
 * [04 EMS Full - Print Graphs](https://github.com/franfranz/Morphological_Systems_Entropy/blob/main/Full/04_EMS_Full_Print_graphs_v1_0_0.R)
 
 #### Data 
-* Language Resources used in the study (from Itwac and Morph-it!) [(wd0)](https://github.com/franfranz/Morphological_Systems_Entropy/tree/main/Full/wd0)
-* Merged dataset with all nouns, animate sample, control sample [(wd1)](https://github.com/franfranz/Morphological_Systems_Entropy/tree/main/Full/wd1)
-* Text files collecting the 10-word-windows surrounding the words in the animate and control sample, collected from the Itwac corpus [(wd2)](https://github.com/franfranz/Morphological_Systems_Entropy/tree/main/Full/wd2). Please note that this folder only contains a mini sample of nouns. The full dataset is available on request.
-* Datasets of animate sample and control sample, with Context Entropy measures [(wd3)](https://github.com/franfranz/Morphological_Systems_Entropy/tree/main/Full/wd3)
+* Language Resources used in the study (from Itwac and Morph-it!) [(wd0)](https://github.com/franfranz/Morphological_Systems_Entropy/tree/main/Full/wd0).
+* Merged dataset with all nouns, animate sample, control sample [(wd1)](https://github.com/franfranz/Morphological_Systems_Entropy/tree/main/Full/wd1).
+* Text files collecting the 10-word-windows surrounding the words in the animate and control sample, collected from the Itwac corpus [(wd2)](https://github.com/franfranz/Morphological_Systems_Entropy/tree/main/Full/wd2). Please note that this folder only contains a mini sample of nouns. The full dataset is available on request
+* Datasets of animate sample and control sample, with Context Entropy measures [(wd3)](https://github.com/franfranz/Morphological_Systems_Entropy/tree/main/Full/wd3).
