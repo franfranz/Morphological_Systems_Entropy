@@ -94,7 +94,7 @@ legendcontent=c("Fem. Plur.","Fem. Sing.","Masc. Plur.", "Masc. Sing.")
 ## input directories 
 
 # wd_code is the directory where this code is stored:
-wd_code="C:\\Users\\FF\\Documents\\Analisi varie\\Inflectional Entropy ITA\\Animacy and Morphology 0_0_1"
+wd_code="PATH"
 setwd(wd_code)
 
 # wd_3 is the subdirectory of wd_code where the input data are stored
