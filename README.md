@@ -16,7 +16,7 @@ This version includes the final dataset used in the study and the code for analy
 
 
 ### [Full version](https://github.com/franfranz/Morphological_Systems_Entropy/tree/main/Full)
-This version includes the code to preprocess the data and obtain the dataset analyzed in the study. 
+This version includes the code for analysis and the code to preprocess the data and obtain the dataset analyzed in the study. 
 
 #### Code
 * [00 EMS Full - Merge Text Resources](https://github.com/franfranz/Morphological_Systems_Entropy/blob/main/Full/00_EMS_Full_Merge_text_resources_v1_0_0.R)
