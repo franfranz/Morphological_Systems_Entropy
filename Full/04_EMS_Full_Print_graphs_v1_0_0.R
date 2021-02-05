@@ -28,10 +28,6 @@
 
 # All nouns, distribution of features 
 #
-# proportion of types in each feature: all nouns     #--------------- mygraph_prop_allnouns_types  
-# proportion of tokens in each feature: all nouns    #--------------- mygraph_prop_allnouns_tokens
-# token frequency - density - all nouns              #--------------- mygraph_dens_allnouns 
-# token frequency - density - animate nouns          #--------------- mygraph_dens_animnouns
 
 #--------------- mygraph_controlsample_features              
 #--------------- mygraph_controlsample_features_superimposed
@@ -63,7 +59,7 @@ graphlist=complete_graphlist
 #
 
 # this is the directory where the code for analysis is stored:
-wd_code="C:\\Users\\FF\\Documents\\Analisi varie\\Inflectional Entropy ITA\\Animacy and Morphology 0_0_1"
+wd_code="PATH"
 setwd(wd_code)
 
 # this is the subdirectory of wd_code to save graphics to
