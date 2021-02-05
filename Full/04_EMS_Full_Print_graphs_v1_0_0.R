@@ -26,8 +26,6 @@
 #----
 #   Index  
 
-# All nouns, distribution of features 
-#
 
 #--------------- mygraph_controlsample_features              
 #--------------- mygraph_controlsample_features_superimposed
