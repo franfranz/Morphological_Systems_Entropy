@@ -963,7 +963,7 @@ ms_c_ent_dist= ks.test(control_ms$entropy, anim_ms$entropy)
 #
 model_H1=aov(entropy~POS*nountype, data=dat_nouns)
 HSD_1= TukeyHSD(model_H1, ordered=F)
-HSD_1df=as.data.frame(tthsd1$`POS:nountype`)
+HSD_1df=as.data.frame(HSD_1$`POS:nountype`)
 
 HSD_1df$p_adj=HSD_1df$`p adj`
 HSD_1df
