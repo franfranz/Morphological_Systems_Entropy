@@ -14,7 +14,7 @@
 #
 # v. Compact 1.0.1
 # 
-# https://github.com/franfranz/Morphological_Systems_Entropy/tree/main/Compact
+# https://github.com/franfranz/Morphological_Systems_Entropy/blob/main/Compact/
 
 
 #
