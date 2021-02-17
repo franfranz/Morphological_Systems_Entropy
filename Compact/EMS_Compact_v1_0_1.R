@@ -12,7 +12,7 @@
 
 # EMS COMPACT
 #
-# v. Compact 1.0.0
+# v. Compact 1.0.1
 # 
 # https://github.com/franfranz/Morphological_Systems_Entropy/tree/main/Compact
 
@@ -111,7 +111,7 @@ roundnum=3
 ## input directories 
 
 # this is the directory where this code is stored:
-wd_code="C:\\Users\\FF\\Documents\\Analisi varie\\Inflectional Entropy ITA\\Animacy and Morphology 0_0_1\\compact_v"
+wd_code="PATH"
 setwd(wd_code)
 
 # this is the subdirectory of wd_code where the data are stored
