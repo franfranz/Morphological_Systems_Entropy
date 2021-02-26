@@ -696,25 +696,35 @@ shapiro.test(anim_ms$logtoken)
 
 # quantile-quantile plots
 library(car)
+mygraph_qq_anim_nouns%<a-%{
+  par(mfrow=c(2,2))
+  qqPlot(anim_fp$logtoken, pch=myfavpch, col=col_fp, col.lines = myfavlinescol1, id=F, main = "Anim nouns \n Feminine Singular")
+  qqPlot(anim_fs$logtoken, pch=myfavpch, col=col_fs, col.lines = myfavlinescol1, id=F, main = "Anim nouns \n Feminine Plural")
+  qqPlot(anim_mp$logtoken, pch=myfavpch, col=col_mp, col.lines = myfavlinescol1, id=F, main = "Anim nouns \n Masculine Singular")
+  qqPlot(anim_ms$logtoken, pch=myfavpch, col=col_ms, col.lines = myfavlinescol1, id=F, main = "Anim nouns \n Masculine Plural")
+}
+par(mfrow=c(1,1))
+mygraph_qq_anim_nouns
+
 mygraph_qq_cont_nouns%<a-%{
   par(mfrow=c(2,2))
-  qqPlot(anim_fp$logtoken, pch=myfavpch, col=col_fp, col.lines = myfavlinescol1, id=F, main = "Control Sample \n Feminine Singular")
-  qqPlot(anim_fs$logtoken, pch=myfavpch, col=col_fs, col.lines = myfavlinescol1, id=F, main = "Control Sample \n Feminine Plural")
-  qqPlot(anim_mp$logtoken, pch=myfavpch, col=col_mp, col.lines = myfavlinescol1, id=F, main = "Control Sample \n Masculine Singular")
-  qqPlot(anim_ms$logtoken, pch=myfavpch, col=col_ms, col.lines = myfavlinescol1, id=F, main = "Control Sample \n Masculine Plural")
+  qqPlot(control_fp$logtoken, pch=myfavpch, col=col_fp, col.lines = myfavlinescol1, id=F, main = "Control Sample \n Feminine Singular")
+  qqPlot(control_fs$logtoken, pch=myfavpch, col=col_fs, col.lines = myfavlinescol1, id=F, main = "Control Sample \n Feminine Plural")
+  qqPlot(control_mp$logtoken, pch=myfavpch, col=col_mp, col.lines = myfavlinescol1, id=F, main = "Control Sample \n Masculine Singular")
+  qqPlot(control_ms$logtoken, pch=myfavpch, col=col_ms, col.lines = myfavlinescol1, id=F, main = "Control Sample \n Masculine Plural")
 }
 par(mfrow=c(1,1))
 mygraph_qq_cont_nouns
 
-mygraph_qq_anim_nouns%<a-%{
+mygraph_qq_all_nouns%<a-%{
   par(mfrow=c(2,2))
-  qqPlot(alln_fp$logtoken, pch=myfavpch, col=col_fp, col.lines = myfavlinescol1, id=F, main = "Animate nouns \n Feminine Singular")
-  qqPlot(alln_fs$logtoken, pch=myfavpch, col=col_fs, col.lines = myfavlinescol1, id=F, main = "Animate nouns \n Feminine Plural")
-  qqPlot(alln_mp$logtoken, pch=myfavpch, col=col_mp, col.lines = myfavlinescol1, id=F, main = "Animate nouns \n Masculine Singular")
-  qqPlot(alln_ms$logtoken, pch=myfavpch, col=col_ms, col.lines = myfavlinescol1, id=F, main = "Animate nouns \n Masculine Plural")
+  qqPlot(alln_fp$logtoken, pch=myfavpch, col=col_fp, col.lines = myfavlinescol1, id=F, main = "All nouns \n Feminine Singular")
+  qqPlot(alln_fs$logtoken, pch=myfavpch, col=col_fs, col.lines = myfavlinescol1, id=F, main = "All nouns \n Feminine Plural")
+  qqPlot(alln_mp$logtoken, pch=myfavpch, col=col_mp, col.lines = myfavlinescol1, id=F, main = "All nouns \n Masculine Singular")
+  qqPlot(alln_ms$logtoken, pch=myfavpch, col=col_ms, col.lines = myfavlinescol1, id=F, main = "All nouns \n Masculine Plural")
 }
 par(mfrow=c(1,1))
-mygraph_qq_anim_nouns
+mygraph_qq_all_nouns
 
 
 # distance within features, between samples
