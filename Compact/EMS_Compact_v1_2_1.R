@@ -1,4 +1,4 @@
-###
+##
 #
 #     E N T R O P Y  
 #
@@ -12,7 +12,7 @@
 
 # EMS COMPACT
 #
-# v. Compact 1.1.0
+# v. Compact 1.2.1
 # 
 # https://github.com/franfranz/Morphological_Systems_Entropy/blob/main/Compact/
 
@@ -40,7 +40,7 @@
 #
 ###
 
-# required packages: pryr, stringr, car, treemap, LaplacesDemon, kolmim, multcomp, tidyverse
+# required packages: pryr, stringr, car, treemap, LaplacesDemon, kolmim, viridisLite, tidyverse
 
 library(pryr)
 
@@ -51,6 +51,13 @@ col_fp = "#00008B" # "blue4"
 col_fs = "#00B2EE" # "deepskyblue2" 
 col_mp = "#CD2626" # "firebrick3"  
 col_ms = "#FF8C00" # "darkorange"  
+
+# use viridisLite for greyscale-resistant transformation
+#col_fp = viridisLite::viridis(4)[1]
+#col_fs = viridisLite::viridis(4)[2]
+#col_mp = viridisLite::viridis(4)[3] 
+#col_ms = viridisLite::viridis(4)[4] 
+
 pal_01=c(col_fp, col_fs, col_mp, col_ms)
 
 col_ref= "#008B45" # "springgreen4"
@@ -361,7 +368,7 @@ mygraph_dens_allnouns %<a-% {
        col=col_fp, 
        lwd=myfavlwd, 
        lty=myfavlty_fp,
-       main="All nouns", 
+       main="All nouns - Token Frequency", 
        xlab="Token frequency of occurrence (log)", 
        ylim=mymostcommon_ylim, xlim=mymostcommon_xlim, 
        axes=myaxesset)
@@ -529,7 +536,7 @@ mygraph_dens_animnouns %<a-% {
        col=col_fp, 
        lwd=myfavlwd, 
        lty=myfavlty_fp,
-       main="Animate nouns", 
+       main="Animate nouns - Token Frequency", 
        xlab="Token frequency of occurrence (log)", 
        ylim=mymostcommon_ylim, xlim=mymostcommon_xlim,
        axes=myaxesset)
@@ -942,7 +949,7 @@ dat_nouns=rbind.data.frame(dat_cont, dat_anim)
 
 
 library(kolmim)
-library(multcomp)
+#library(multcomp)
 library(car)
 
 # Check for normality (Shapiro-Wilk)
@@ -988,20 +995,6 @@ fp_c_ent_dist= ks.test(control_fp$entropy, anim_fp$entropy)
 fs_c_ent_dist= ks.test(control_fs$entropy, anim_fs$entropy)
 mp_c_ent_dist= ks.test(control_mp$entropy, anim_mp$entropy)
 ms_c_ent_dist= ks.test(control_ms$entropy, anim_ms$entropy)
-
-#
-# Tukey HSD
-#
-model_H1=aov(entropy~POS*nountype, data=dat_nouns)
-HSD_1= TukeyHSD(model_H1, ordered=F)
-HSD_1df=as.data.frame(HSD_1$`POS:nountype`)
-
-HSD_1df$p_adj=HSD_1df$`p adj`
-HSD_1df
-HSD_1df_NS=HSD_1df[HSD_1df$p_adj>.05, ]
-HSD_1df_NS
-HSD_1df_SV=HSD_1df[HSD_1df$p_adj<.05, ]
-HSD_1df_SV
 
 
 
@@ -1296,10 +1289,3 @@ for (eachgraph in graphlist) {
 # mygraph2
 # dev.off()
 # 
-
-
-
-
-
-
-
