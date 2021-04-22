@@ -12,9 +12,9 @@
 
 # EMS COMPACT
 #
-# v. Compact 1.2.1
+# v. Compact 1.3.1
 # 
-# https://github.com/franfranz/Morphological_Systems_Entropy/blob/main/Compact/
+# https://github.com/franfranz/Morphological_Systems_Entropy/tree/main/Compact
 
 
 #
