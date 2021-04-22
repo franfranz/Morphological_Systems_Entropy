@@ -7,7 +7,7 @@ Code and data for the study "Entropy of morphological systems is modulated by fu
 This version includes the final dataset used in the study and the code for analysis and graph printing. 
 
 #### Code 
-* [EMS Compact](https://github.com/franfranz/Morphological_Systems_Entropy/blob/main/Compact/EMS_Compact_v1_2_1.R)
+* [EMS Compact](https://github.com/franfranz/Morphological_Systems_Entropy/blob/main/Compact/EMS_Compact_v1_3_1.R)
 
 #### Data 
 Datasets of ll nouns, animate sample, control sample [(wd_in)](https://github.com/franfranz/Morphological_Systems_Entropy/tree/main/Compact/wd_in)
