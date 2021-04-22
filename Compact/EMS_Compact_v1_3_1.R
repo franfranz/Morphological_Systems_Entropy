@@ -60,7 +60,7 @@ col_ms = "#FF8C00" # "darkorange"
 
 pal_01=c(col_fp, col_fs, col_mp, col_ms)
 
-col_ref= "#008B45" # "springgreen4"
+col_ref= "#4A4A4A"  # "#008B45" # "springgreen4"
 col_borders= "#FFFFFF" # "white"
 
 myfavlinescol1="#4A4A4A" #"grey29"
@@ -108,7 +108,7 @@ myfavgridcol="lightgray"
 myfavgridlty="dotted"
 
 # some common features of legends
-myfavlegendcex=0.8
+myfavlegendcex=1.2
 myfavlegendinset=0.02
 legendcontent=c("Fem. Plur.","Fem. Sing.","Masc. Plur.", "Masc. Sing.")
 
@@ -556,6 +556,8 @@ mygraph_dens_animnouns
 
 
 
+
+
 ###                               Entropy of Morphological Systems    - EMS Compact  
 #                                                                       Compare Nouns Distributions                                   Entropy of Morphological Systems    - EMS Compact     
 #
@@ -597,7 +599,7 @@ mygraph_controlsample_features %<a-% {
   xpd=T
   legend("topright", inset=-0.1, 
          c("All Nouns","Control Sample"), lwd=1.9, lty=c(myfavlty_ans, myfavlty_cont), 
-         bty="n", cex=0.8, ncol = 1)
+         bty="n", cex=myfavlegendcex, ncol = 1)
   xpd=F
   
   plot(density(alln_fs$logtoken), col=col_fs, lwd=myfavlwd, ylim=mymostcommon_ylim,
@@ -644,7 +646,7 @@ mygraph_controlsample_features_superimposed %<a-% {
   lines(density(control_mp$logtoken), col=col_mp, lwd=myfavlwd, lty=myfavlty_cont)
   lines(density(control_ms$logtoken), col=col_ms, lwd=myfavlwd, lty=myfavlty_cont)
   legend("topright", inset=.02, bty= "n", #title="Inflection",
-         legend = legendcontent, fill=pal_01,  cex=0.8)
+         legend = legendcontent, fill=pal_01,  cex=myfavlegendcex)
   
 }
 mygraph_controlsample_features_superimposed
@@ -739,6 +741,15 @@ ks.test(control_fp$logtoken, anim_fp$logtoken)
 ks.test(control_fs$logtoken, anim_fs$logtoken)
 ks.test(control_mp$logtoken, anim_mp$logtoken)
 ks.test(control_ms$logtoken, anim_ms$logtoken)
+
+
+# pairwise comparison within features, between samples
+wilcox.test(alln_fp$logtoken, anim_fp$logtoken)
+wilcox.test(alln_fs$logtoken, anim_fs$logtoken)
+wilcox.test(alln_mp$logtoken, anim_mp$logtoken)
+wilcox.test(alln_ms$logtoken, anim_ms$logtoken)
+
+
 
 
 # frequency: median
@@ -930,6 +941,26 @@ collected_kld=cbind(distalln__type_ent$intrinsic.discrepancy,
 colnames(collected_kld)=list("allnouns_type", "allnouns_token", "animnouns_type", "animnouns_token")
 
 
+#
+# Sum-up graph of logtoken distributions
+#
+par(mfrow=c(1,1))
+par(xpd=F) 
+sumgraph_data= as.matrix (t(probs_tab_samples[2:5, ])) #--------------- mygraph_sumup_logtoken_distr
+mygraph_sumup_toktyp_all %<a-% { 
+colnames(sumgraph_data) <- c("All nouns \n Types","All nouns \n Tokens","Anim nouns \n Types", "Anim nouns \n Tokens")
+# Grouped barplot
+barplot(sumgraph_data, 
+        col=pal_01 , 
+        border=col_borders, 
+        beside=T, 
+      )
+abline(h=refline, col= col_ref, lty=myfavlty_ref, lwd=myfavlwd)
+legend("topleft", inset=.02, bty= "n", 
+       legend = legendcontent, fill=pal_01,  cex=1)
+}
+
+mygraph_sumup_toktyp_all
 
 ###
 #                                   Entropy of Morphological Systems    - EMS Compact     
@@ -990,11 +1021,12 @@ par(mfrow=c(1,1))
 mygraph_qq_anim_nouns
 
 
-# distance within features, between samples, pairwise
+# ks distance within features, between samples
 fp_c_ent_dist= ks.test(control_fp$entropy, anim_fp$entropy)
 fs_c_ent_dist= ks.test(control_fs$entropy, anim_fs$entropy)
 mp_c_ent_dist= ks.test(control_mp$entropy, anim_mp$entropy)
 ms_c_ent_dist= ks.test(control_ms$entropy, anim_ms$entropy)
+
 
 
 
@@ -1078,7 +1110,7 @@ mygraph_dens_cont_contextentropy  %<a-% {
   lines(density(control_ms$entropy), lwd=myfavlwd, col=col_ms, lty= myfavlty_ms)
   legend("topleft", inset=.02,# title="Features", 
          legend = legendcontent,
-         fill=pal_01, ncol=1,  cex=0.8, bty = "n")
+         fill=pal_01, ncol=1,  cex=myfavlegendcex, bty = "n")
 }
 mygraph_dens_cont_contextentropy
 
@@ -1101,7 +1133,7 @@ mygraph_dens_anim_contextentropy%<a-% {
   lines(density(anim_ms$entropy), lwd=myfavlwd, col=col_ms, lty= myfavlty_ms)
   legend("topleft", inset=.02,# title="Features", 
          legend = legendcontent,
-         fill=pal_01, ncol=1,  cex=0.8, bty = "n")
+         fill=pal_01, ncol=1,  cex=myfavlegendcex, bty = "n")
 }
 mygraph_dens_anim_contextentropy
 
