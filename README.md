@@ -1,5 +1,5 @@
 # Morphological Systems Entropy: Nominal Inflection
-Code and data for the study "Entropy of morphological systems is modulated by functional and semantic properties" by F. Franzon (@franfranz) and C. Zanini (@chzani) (insert link to preprint).
+Code and data for the study "Entropy of morphological systems is modulated by functional and semantic properties" by F. Franzon (@franfranz) and C. Zanini (@chzani)  - [Preprint](https://psyarxiv.com/qyd4g).
 
 ## Contents
 
